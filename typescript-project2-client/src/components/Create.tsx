@@ -21,7 +21,7 @@ const Create = () => {
     const handelCreate = async(e:FormEvent<HTMLFormElement>) =>{
         e.preventDefault();
         console.log(product);
-        const res = await axios.post("http://localhost:3000/products-create");
+        const res = await axios.post("http://localhost:3000/products-create",product);
         console.log(res.data);
         
 
